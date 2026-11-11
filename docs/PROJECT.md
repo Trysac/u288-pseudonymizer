@@ -21,6 +21,18 @@ Measured values only; a value that has not been measured stays "pending measurem
 
 | Metric | Value |
 |---|---|
-| Tokens (input / output) | pending measurement |
+| Tokens (input / output) | 858409 / 53887 |
 | Hours (human) | pending measurement |
-| Cost (USD) | pending measurement |
+| Cost (USD) | 0.0766 |
+
+## Factory run u288 (measured from API usage)
+
+| Phase | Model | Batch | Input | Output | Cache write | Cache read | Cost (USD) |
+|---|---|---|---|---|---|---|---|
+| generation | deepseek-v4-pro | yes | 1800 | 20999 | 0 | 3200 | 0.0428 |
+| fix-1 | deepseek-flash | no | 8593 | 542 | 0 | 19712 | 0.0017 |
+| audit | deepseek-flash | no | 22241 | 11100 | 0 | 201216 | 0.0106 |
+| fix-2 | deepseek-flash | no | 16187 | 3544 | 0 | 107136 | 0.0049 |
+| threat-model | deepseek-flash | no | 31220 | 17702 | 0 | 447104 | 0.0166 |
+
+Total: $0.0766. Prices: deepseek line, as measured by its adapter.

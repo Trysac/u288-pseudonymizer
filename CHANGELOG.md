@@ -9,4 +9,5 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 
+- Added keyed, domain-separated HMAC-SHA256 pseudonymizer with vault-based re-identification and a STDIN CLI.
 - Initial project structure from the factory utility template.
